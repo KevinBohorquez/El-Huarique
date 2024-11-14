@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane prefHeight="60.0" prefWidth="750.0" styleClass="cell_container" stylesheets="@../../Styles/TransactionCell.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1">
+    <Label fx:id="costumer_lbl" layoutX="46.0" layoutY="21.0" text="NameCost" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="30.0" />
+    <Label fx:id="DNI_lbl" layoutX="134.0" layoutY="22.0" styleClass="trans_pAddress_lbl" text="CostDNI" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="134.0" />
+    <Line endY="20.0" layoutX="307.0" layoutY="18.0" AnchorPane.bottomAnchor="21.5" AnchorPane.leftAnchor="300.0" />
+    <Label fx:id="tiempo_esperando_lbl" layoutX="482.0" layoutY="22.0" styleClass="trans_pAddress_lbl" text="time_waitng" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="482.0" />
+    <Label fx:id="mesa_asignada_lbl" layoutX="607.0" layoutY="17.0" styleClass="trans_amount_lbl" text="numMesa" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="607.0" />
+   <Label fx:id="waiter_lbl" layoutX="229.0" layoutY="22.0" styleClass="trans_pAddress_lbl" text="NameWaiter" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="229.0" />
+   <Label fx:id="hora_asignada_lbl" layoutX="365.0" layoutY="22.0" styleClass="trans_pAddress_lbl" text="hora_asig" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="365.0" />
+   <Button fx:id="eliminar_btn" layoutX="661.0" layoutY="18.0" mnemonicParsing="false" text="Eliminar" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="661.0">
+      <graphic>
+         <FontAwesomeIconView glyphName="TRASH" size="16" />
+      </graphic>
+   </Button>
+</AnchorPane>

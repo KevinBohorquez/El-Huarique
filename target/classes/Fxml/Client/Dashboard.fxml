@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="650.0" prefWidth="850.0" styleClass="dashboard" stylesheets="@../../Styles/Dashboard.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="testeos.Controllers.Client.DashboardController">
+   <Text layoutX="17.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="user_name" text="Bienvenido, administrador" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="15.0" />
+   <Label fx:id="login_date" styleClass="date_lbl" text="Hoy 2024-11-07" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="27.0" />
+   <Text layoutX="47.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="section_title" text="Mesas disponibles:" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="60.0" />
+   <TilePane layoutX="48.0" layoutY="82.0" prefHeight="221.0" prefWidth="790.0" styleClass="account_view" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="90.0">
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="140.0">
+         <styleClass>
+            <String fx:value="account" />
+            <String fx:value="account_gradient" />
+         </styleClass>
+         <Label fx:id="table_cap_1" layoutX="33.0" layoutY="28.0" styleClass="account_balance" text="0/4" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="45.0" />
+         <FontAwesomeIconView fx:id="table_status_1" glyphName="SQUARE" layoutX="258.0" layoutY="29.0" size="30" styleClass="table_init" AnchorPane.leftAnchor="5.0" />
+         <Text layoutX="34.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mesa N°1" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="10.0" />
+         <TilePane.margin>
+            <Insets left="10.0" />
+         </TilePane.margin>
+      </AnchorPane>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="140.0">
+         <styleClass>
+            <String fx:value="account" />
+            <String fx:value="account_gradient" />
+         </styleClass>
+         <Label fx:id="table_cap_2" layoutX="38.0" layoutY="70.0" styleClass="account_balance" text="0/4" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="45.0" />
+         <FontAwesomeIconView fx:id="table_status_2" glyphName="SQUARE" layoutX="258.0" layoutY="29.0" size="30" styleClass="table_init" AnchorPane.leftAnchor="5.0" />
+         <Text layoutX="34.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mesa N°2" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="10.0" />
+         <TilePane.margin>
+            <Insets left="10.0" />
+         </TilePane.margin>
+      </AnchorPane>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="140.0">
+         <styleClass>
+            <String fx:value="account" />
+            <String fx:value="account_gradient" />
+         </styleClass>
+         <Label fx:id="table_cap_3" layoutX="38.0" layoutY="70.0" styleClass="account_balance" text="0/2" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="45.0" />
+         <FontAwesomeIconView fx:id="table_status_3" glyphName="SQUARE" layoutX="258.0" layoutY="29.0" size="30" styleClass="table_init" AnchorPane.leftAnchor="5.0" />
+         <Text layoutX="34.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mesa N°3" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="10.0" />
+         <TilePane.margin>
+            <Insets left="10.0" />
+         </TilePane.margin>
+      </AnchorPane>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="140.0">
+         <styleClass>
+            <String fx:value="account" />
+            <String fx:value="account_gradient" />
+         </styleClass>
+         <Label fx:id="table_cap_4" layoutX="48.0" layoutY="40.0" styleClass="account_balance" text="0/6" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="45.0" />
+         <FontAwesomeIconView fx:id="table_status_4" glyphName="SQUARE" layoutX="258.0" layoutY="29.0" size="30" styleClass="table_init" AnchorPane.leftAnchor="5.0" />
+         <Text layoutX="34.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mesa N°4" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="10.0" />
+         <TilePane.margin>
+            <Insets left="10.0" />
+         </TilePane.margin>
+      </AnchorPane>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="140.0">
+         <styleClass>
+            <String fx:value="account" />
+            <String fx:value="account_gradient" />
+         </styleClass>
+         <Label fx:id="table_cap_5" layoutX="47.0" layoutY="36.0" styleClass="account_balance" text="0/8" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="45.0" />
+         <FontAwesomeIconView fx:id="table_status_5" glyphName="SQUARE" layoutX="258.0" layoutY="29.0" size="30" styleClass="table_init" AnchorPane.leftAnchor="5.0" />
+         <Text layoutX="34.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mesa N°5" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="10.0" />
+         <TilePane.margin>
+            <Insets left="10.0" />
+         </TilePane.margin>
+      </AnchorPane>
+      <AnchorPane maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="140.0">
+         <styleClass>
+            <String fx:value="account" />
+            <String fx:value="account_gradient" />
+         </styleClass>
+         <Label fx:id="table_cap_6" layoutX="38.0" layoutY="70.0" styleClass="account_balance" text="0/10" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="30.0" />
+         <FontAwesomeIconView fx:id="table_status_6" glyphName="SQUARE" layoutX="258.0" layoutY="29.0" size="30" styleClass="table_init" AnchorPane.leftAnchor="5.0" />
+         <Text layoutX="34.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mesa N°6" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="10.0" />
+         <TilePane.margin>
+            <Insets left="10.0" top="10.0" />
+         </TilePane.margin>
+      </AnchorPane>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="140.0">
+         <styleClass>
+            <String fx:value="account" />
+            <String fx:value="account_gradient" />
+         </styleClass>
+         <Label fx:id="table_cap_7" layoutX="38.0" layoutY="70.0" styleClass="account_balance" text="0/6" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="45.0" />
+         <FontAwesomeIconView fx:id="table_status_7" glyphName="SQUARE" layoutX="258.0" layoutY="29.0" size="30" styleClass="table_init" AnchorPane.leftAnchor="5.0" />
+         <Text layoutX="34.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mesa N°7" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="10.0" />
+         <TilePane.margin>
+            <Insets left="10.0" top="10.0" />
+         </TilePane.margin>
+      </AnchorPane>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="140.0">
+         <styleClass>
+            <String fx:value="account" />
+            <String fx:value="account_gradient" />
+         </styleClass>
+         <Label fx:id="table_cap_8" layoutX="37.0" layoutY="29.0" styleClass="account_balance" text="0/6" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="45.0" />
+         <FontAwesomeIconView fx:id="table_status_8" glyphName="SQUARE" layoutX="258.0" layoutY="29.0" size="30" styleClass="table_init" AnchorPane.leftAnchor="5.0" />
+         <Text layoutX="34.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mesa N°8" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="10.0" />
+         <TilePane.margin>
+            <Insets left="10.0" top="10.0" />
+         </TilePane.margin>
+      </AnchorPane>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="140.0">
+         <styleClass>
+            <String fx:value="account" />
+            <String fx:value="account_gradient" />
+         </styleClass>
+         <Label fx:id="table_cap_9" layoutX="38.0" layoutY="70.0" styleClass="account_balance" text="0/4" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="45.0" />
+         <FontAwesomeIconView fx:id="table_status_9" glyphName="SQUARE" layoutX="258.0" layoutY="29.0" size="30" styleClass="table_init" AnchorPane.leftAnchor="5.0" />
+         <Text layoutX="34.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mesa N°9" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="10.0" />
+         <TilePane.margin>
+            <Insets left="10.0" top="10.0" />
+         </TilePane.margin>
+      </AnchorPane>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="140.0">
+         <styleClass>
+            <String fx:value="account" />
+            <String fx:value="account_gradient" />
+         </styleClass>
+         <Label fx:id="table_cap_10" layoutX="37.0" layoutY="26.0" styleClass="account_balance" text="0/4" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="45.0" />
+         <FontAwesomeIconView fx:id="table_status_10" glyphName="SQUARE" layoutX="258.0" layoutY="29.0" size="30" styleClass="table_init" AnchorPane.leftAnchor="5.0" />
+         <Text layoutX="34.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mesa N°10" wrappingWidth="82.09159469604492" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="10.0" />
+         <TilePane.margin>
+            <Insets left="10.0" top="10.0" />
+         </TilePane.margin>
+      </AnchorPane>
+   </TilePane>
+   <Text layoutX="26.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="section_title" text="Reservar una mesa:" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="345.0" />
+   <VBox fillWidth="false" layoutX="594.0" layoutY="372.0" prefHeight="334.0" prefWidth="347.0" styleClass="new_trans_container" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="484.0">
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="section_title" text="Mesa elegida:" />
+      <TextField fx:id="table_choosen_fld" prefWidth="310.0" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="section_title" text="DNI del cliente:" />
+      <TextField fx:id="dni_costumer_fld" prefHeight="28.0" prefWidth="310.0" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="section_title" text="Nombre del cliente:" />
+      <TextField fx:id="name_costumer_fld" prefHeight="28.0" prefWidth="311.0" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="section_title" text="Nombre del mesero:" />
+      <TextField fx:id="name_waiter_fld" prefHeight="28.0" prefWidth="311.0" />
+      <Button fx:id="table_btn" mnemonicParsing="false" prefHeight="34.0" prefWidth="311.0" text="Agregar Cliente" />
+   </VBox>
+   <Label fx:id="error_lbl" layoutX="372.0" layoutY="337.0" styleClass="error_lbl" />
+</AnchorPane>
